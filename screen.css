@@ -86,6 +86,10 @@ img {
      margin-left: 45.454545454545%; /* Push img out of figcaptions's way */
      width: 54.545454545454%; /* Make the image 6/11's of the page */
   }
+  body {
+      background-color: blue;
+  }
+
   figcaption {
     position: absolute; /* Position figcaption absolutely, -relative- to figure, above */
     width: 45.454545454545%; /* Make the figcaption 5/11's of the page */
