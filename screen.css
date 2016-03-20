@@ -48,6 +48,31 @@ table {
 }
 
 /* Custom site styles */
+
+video {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+audio {
+  display: block;
+  width: 100%;
+}
+
+
+.video {
+  background-color: #222;
+}
+.video figcaption {
+  color: #EEE;
+  padding: 1em;
+}
+
+
+html {
+  padding: .625em; /* 10px @ 16px */
+}
+
 /*
   Using Minor Third Modular Scale:
   http://www.modularscale.com/?18&px&1.2&web&text
