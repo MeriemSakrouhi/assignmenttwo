@@ -73,6 +73,12 @@ html {
   padding: .625em; /* 10px @ 16px */
 }
 
+html {
+  background-image: url(squares-test.png)
+}
+
+
+
 /*
   Using Minor Third Modular Scale:
   http://www.modularscale.com/?18&px&1.2&web&text
