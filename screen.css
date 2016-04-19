@@ -114,7 +114,7 @@ img {
 
   #logo-mimi{
 
-   width:5em;
+   width:10em;
    padding-top: 1.728em;
    padding-bottom: 0.8333333333333334em; /* 25.92px / 31.104 */
    max-width:20%;
@@ -135,19 +135,9 @@ img {
 }
 */
 
-/* mediaqueries*/
-
-@media screen and (min-width: 33.333333333333336em) {
-  figure {
-    position: relative; /* Give figure a positioning context
-                           to set up the position of figcaption below...*/
-    background-color: #F7F7F7;
-  }
-  img {
-    max-width: auto;
-  }
-
-  body {
-    background-color: #F7F7F7;
-  }
-
+img
+{
+  display: block;
+  max-width: 100%;
+  padding-top: 1.4400000000000002em; /* 25.92px / 18px */
+}
