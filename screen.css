@@ -54,11 +54,6 @@ video {
   max-width: 100%;
   margin: 0 auto;
 }
-audio {
-  display: block;
-  width: 100%;
-}
-
 
 .video {
   background-color: #222;
@@ -70,6 +65,8 @@ audio {
 
 
 html {
+  font-family: "Lato", avenir next, helvetica neue, helvetica, arial, sans-serif;
+  text-align:center;
   padding: .625em; /* 10px @ 16px */
 }
 
@@ -80,13 +77,13 @@ html {
 */
 
 body {
-  font-family: "avenir next", helvetica neue, helvetica, arial, sans-serif;
   font-size: 1.125em; /* 18px/16px = 1.125 */
   line-height: 1.4400000000000002em; /* 25.92px / 18px */
   padding-top: 1.4400000000000002em; /* 25.92px / 18px */
   padding-left: 1.200em; /* 5:6 ratio on baseline */
   padding-right: 0.600em; /* half the 5:6 ratio */
-  background-color: #E5DFDD;
+  padding-bottom: 2.88em; /* 25.92 * 2 / 18px */
+  background-color: #F7F7F7;
 }
 
 h2 {
@@ -98,49 +95,59 @@ h2 {
 
 img {
   display: block; /* To remember: Images display inline by default */
+  margin-left: auto;
+  margin-right: auto
   max-width: 100%; /* Responsive images! Always be at most 100%
                       the width of the containing element
                       (<figure>, in this example's case) */
   padding-bottom: 1.4400000000000002em; /* 25.92px / 18px */
+  justify-content:center;
 }
+
+/* layout*/
+
+    imgdisplayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    }
+
+  #logo-mimi{
+
+   width:5em;
+   padding-top: 1.728em;
+   padding-bottom: 0.8333333333333334em; /* 25.92px / 31.104 */
+   max-width:20%;
+  }
+
+/*icons*/
+.icons img
+{
+  width:5em;
+  margin-top:0.8333333333333334em;
+  padding-top: 0.5em; /* 25.92px / 31.104 */
+  padding-bottom: 0.5em; /* 25.92px / 31.104 */
+}
+
+/*
+.g-recaptcha div {
+  margin-left: auto; margin-right: auto;
+}
+*/
+
+/* mediaqueries*/
 
 @media screen and (min-width: 33.333333333333336em) {
   figure {
     position: relative; /* Give figure a positioning context
                            to set up the position of figcaption below...*/
-    background-color: #CCC;
+    background-color: #F7F7F7;
   }
   img {
-    margin-left: 45.454545454545%; /* Push img out of figcaptions's way */
-    width: 54.545454545454%; /* Make the image 6/11's of the page */
+    max-width: auto;
   }
+
   body {
-    background-color: #FFF8F6;
+    background-color: #F7F7F7;
   }
 
-  figcaption {
-    position: absolute; /* Position figcaption absolutely, -relative- to figure, above */
-    width: 45.454545454545%; /* Make the figcaption 5/11's of the page */
-    top: 0; /* Put figcaption at the very top... */
-    left: 0; /* ...and very left of figure */
-  }
-
-   /* Flexbox-enabled styles below */
-
-  .flexbox figure {
-    position: static;
-    display: flex;
-  }
-  .flexbox .images {
-    margin-left: 0;
-    width: auto;
-    flex-basis: 54.545454545454%;
-  }
-  .flexbox figcaption {
-    position: static;
-    width: auto;
-    flex-basis: 45.454545454545%;
-  }
-
-}
-}
