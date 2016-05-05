@@ -98,11 +98,25 @@ body {
   background-color: #F7F7F7;
 }
 
-h2 {
+h1 {
   font-size: 1.728em; /* 31.104px / 18px */
   line-height: 1.6666666666666667em; /* 25.92 * 2 / 31.104 */
   padding-top: 0.8333333333333334em; /* 25.92px / 31.104 */
   padding-bottom: 1.6666666666666667em; /* 25.92 * 2 / 31.104 */
+}
+
+h2 {
+  font-size: 1.125em; /* 18px/16px = 1.125 */
+  line-height: 1.4400000000000002em; /* 25.92px / 18px */
+  padding-top: 1.4400000000000002em; /* 25.92px / 18px */
+  padding-bottom: 2.88em; /* 25.92 * 2 / 18px */
+}
+
+h3{
+  font-size:1em;
+  padding-top: 0.8333333333333334em;
+  padding-bottom: 0.8333333333333334em;
+	text-transform: none;
 }
 
 img {
